@@ -310,18 +310,17 @@ footer small {
 
 @media (max-width: 580px) {
 	nav ul {
-		display: none;
-	}
-
-	.display-nav {
-		padding: 4em 0;
 		display: flex;
 		flex-direction: column;
+		padding: 4em 0;
 		position: absolute;
 		right: 0;
 		left: 0;
 		top: 5em;
 		background-color: var(--bg);
+		width: 0;
+		overflow: hidden;
+		transition: width 0.2s ease-in-out;
 	}
 
 	nav li {

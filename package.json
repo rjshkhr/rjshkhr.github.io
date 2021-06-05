@@ -1,0 +1,30 @@
+{
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "My personal portfolio website.",
+	"private": true,
+	"scripts": {
+		"start": "webpack serve --mode development",
+		"watch": "webpack --watch --mode development",
+		"build": "webpack --mode production",
+		"build-dev": "webpack",
+		"deploy": "gh-pages -d dist"
+	},
+	"author": "Raj Shekhar",
+	"license": "GPL-3.0-or-later",
+	"homepage": "http://rajshekhar26.github.io",
+	"devDependencies": {
+		"@babel/core": "^7.14.3",
+		"@babel/preset-env": "^7.14.4",
+		"babel-loader": "^8.2.2",
+		"clean-webpack-plugin": "^4.0.0-alpha.0",
+		"css-loader": "^5.2.6",
+		"css-minimizer-webpack-plugin": "^3.0.1",
+		"gh-pages": "^3.2.0",
+		"html-webpack-plugin": "^5.3.1",
+		"mini-css-extract-plugin": "^1.6.0",
+		"webpack": "^5.38.1",
+		"webpack-cli": "^4.7.0",
+		"webpack-dev-server": "^3.11.2"
+	}
+}

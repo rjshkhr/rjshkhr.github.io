@@ -501,6 +501,7 @@ footer small {
 }
 
 .header-title:hover::before,
+.resume:hover::before,
 .project-link a:hover::before,
 .scroll a:hover::before,
 footer a:hover::before {

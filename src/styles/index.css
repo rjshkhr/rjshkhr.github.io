@@ -158,6 +158,7 @@ header,
 nav,
 nav ul,
 .hero,
+.contact ul,
 footer {
 	display: flex;
 	align-items: center;
@@ -256,14 +257,23 @@ section {
 	margin: 0 0.2em 0.5em 0.2em;
 }
 
+.contact ul {
+	justify-content: center;
+}
+
 .contact button {
 	display: block;
-	margin: 0 auto;
+	margin-right: 0.5em;
+}
+
+.contact .icon,
+.hero .icon {
+	margin-right: 0.2em;
 }
 
 footer {
 	margin-top: 4em;
-	height: 8em;
+	height: 7em;
 	flex-direction: column;
 	justify-content: center;
 	position: absolute;
@@ -450,7 +460,7 @@ footer small {
 
 .scroll {
 	position: fixed;
-	bottom: 4em;
+	bottom: 3em;
 	font-weight: 600;
 	transition: transform 0.2s ease-in-out;
 }

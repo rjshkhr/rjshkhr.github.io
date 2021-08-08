@@ -258,12 +258,14 @@ section {
 }
 
 .contact ul {
+	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .contact button {
 	display: block;
 	margin-right: 0.5em;
+	margin-top: 0.3em;
 }
 
 .contact .icon,
@@ -272,7 +274,7 @@ section {
 }
 
 footer {
-	margin-top: 4em;
+	margin-top: 5em;
 	height: 7em;
 	flex-direction: column;
 	justify-content: center;

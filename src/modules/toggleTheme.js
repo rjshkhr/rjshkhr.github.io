@@ -22,9 +22,7 @@ const toggleDark = () => {
 	localStorage.setItem('class-btn-theme', 'fa-sun');
 };
 
-const toggleTheme = () => {
-	isDark() ? toggleLight() : toggleDark();
-};
+const toggleTheme = () => isDark() ? toggleLight() : toggleDark();
 
 const addBodyClass = () => document.body.classList.add(getBodyClass);
 const addBtnClass = () => btnTheme.classList.add(getBtnClass);

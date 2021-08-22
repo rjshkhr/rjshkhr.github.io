@@ -33,26 +33,17 @@ var isDark = function isDark() {
   return document.body.classList.contains('body-dark');
 };
 
-var toggleLight = function toggleLight() {
-  document.body.classList.remove('body-dark');
-  btnTheme.classList.remove('fa-sun');
-  document.body.classList.add('body-light');
-  btnTheme.classList.add('fa-moon');
-  localStorage.setItem('class-body-theme', 'body-light');
-  localStorage.setItem('class-btn-theme', 'fa-moon');
-};
-
-var toggleDark = function toggleDark() {
-  document.body.classList.remove('body-light');
-  btnTheme.classList.remove('fa-moon');
-  document.body.classList.add('body-dark');
-  btnTheme.classList.add('fa-sun');
-  localStorage.setItem('class-body-theme', 'body-dark');
-  localStorage.setItem('class-btn-theme', 'fa-sun');
+var setTheme = function setTheme(bodyClass, buttonClass) {
+  document.body.classList.remove(localStorage.getItem('class-body-theme'));
+  btnTheme.classList.remove(localStorage.getItem('class-btn-theme'));
+  document.body.classList.add(bodyClass);
+  btnTheme.classList.add(buttonClass);
+  localStorage.setItem('class-body-theme', bodyClass);
+  localStorage.setItem('class-btn-theme', buttonClass);
 };
 
 var toggleTheme = function toggleTheme() {
-  isDark() ? toggleLight() : toggleDark();
+  return isDark() ? setTheme('body-light', 'fa-moon') : setTheme('body-dark', 'fa-sun');
 };
 
 var addBodyClass = function addBodyClass() {

@@ -10,7 +10,7 @@ module.exports = {
 		filename: 'bundle.js',
 	},
 	devServer: {
-		contentBase: path.join(__dirname, '/dist'),
+		static: path.join(__dirname, '/dist'),
 		hot: true,
 	},
 	devtool: 'source-map',

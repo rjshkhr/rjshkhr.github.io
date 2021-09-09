@@ -3,16 +3,6 @@
 var __webpack_exports__ = {};
 
 ;// CONCATENATED MODULE: ./src/modules/scroll.js
-var scrollDown = function scrollDown() {
-  var btnScrollDown = document.querySelector('.scroll-down');
-
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    btnScrollDown.style.display = 'none';
-  } else {
-    btnScrollDown.style.display = 'block';
-  }
-};
-
 var scrollUp = function scrollUp() {
   var btnScrollUp = document.querySelector('.scroll-up');
 
@@ -23,7 +13,9 @@ var scrollUp = function scrollUp() {
   }
 };
 
-
+/* harmony default export */ const modules_scroll = ({
+  scrollUp: scrollUp
+});
 ;// CONCATENATED MODULE: ./src/modules/toggleTheme.js
 var getBodyClass = localStorage.getItem('class-body-theme');
 var getBtnClass = localStorage.getItem('class-btn-theme');
@@ -82,10 +74,7 @@ var src_btnHamburger = document.querySelector('.fa-bars');
 var src_btnTheme = document.querySelector('.fa-moon');
 src_btnHamburger.addEventListener('click', modules_displayList);
 src_btnTheme.addEventListener('click', toggleTheme);
-document.addEventListener('scroll', function () {
-  scrollDown();
-  scrollUp();
-});
+document.addEventListener('scroll', modules_scroll.scrollUp);
 addBodyClass();
 addBtnClass();
 /******/ })()

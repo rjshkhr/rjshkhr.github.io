@@ -11,7 +11,7 @@
    ================ */
 
 :root {
-	--font-body: 'Poppins', sans-serif;
+	--font-body: font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
 	--header-height: 6em;
 }
 

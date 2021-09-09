@@ -10,7 +10,7 @@
 		"build-dev": "webpack",
 		"deploy": "gh-pages -d dist",
 		"lint": "eslint .",
-		"format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
+		"format": "prettier --write \"**/*.+(js|jsx|json|html|css|md)\""
 	},
 	"author": "Raj Shekhar",
 	"license": "GPL-3.0-or-later",

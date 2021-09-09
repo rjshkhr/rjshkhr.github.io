@@ -5,12 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="description"
-			content="Portfolio website of frontend web developer Raj Shekhar"
+			content="Portfolio website of full stack developer Raj Shekhar"
 		/>
 		<meta
 			name="keywords"
-			content="frontend web developer, frontend, portfolio,
+			content="fullstack developer, frontend, fullstack, backend, portfolio,
 			personal website, html, css, javascript, react"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
 		/>
 		<script
 			src="https://kit.fontawesome.com/fa62c117c7.js"
@@ -25,13 +30,13 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="#hero">About</a>
+						<a href="#project" class="link">Projects</a>
 					</li>
 					<li>
-						<a href="#project">Projects</a>
+						<a href="#skill" class="link">Skills</a>
 					</li>
 					<li>
-						<a href="#contact">Contact</a>
+						<a href="#contact" class="link">Contact</a>
 					</li>
 				</ul>
 				<button aria-label="Toggle theme">
@@ -43,57 +48,65 @@
 			</nav>
 		</header>
 
-		<div id="hero" class="hero">
+		<div class="hero">
 			<h1>
 				Hi. I am
 				<span class="hero-name">Raj</span>
 				<span class="hero-name">Shekhar.</span>
 			</h1>
+
 			<div class="hero-about">
 				<p>
 					I am a full stack developer. I enjoy writing clean code, building
-					beautiful user interfaces, doing stuff in the terminal on my Gentoo
-					GNU/Linux
-					<a href="https://github.com/rajshekhar26/dotfiles">setup</a>
+					beautiful user interfaces, doing stuff in the terminal on my Arch
+					Linux
+					<a href="https://github.com/rajshekhar26/dotfiles" class="link"
+						>setup</a
+					>
 					and more.
 				</p>
-				<a
-					class="resume"
-					href="https://drive.google.com/file/d/16F1xbQCIrqjtztdai-Q2Cu2Nkt0GHJXd/view?usp=sharing"
-				>
-					<button class="btn">Resume</button>
+
+				<a class="resume" href="#">
+					<span class="btn">Resume</span>
 				</a>
 			</div>
 		</div>
 
 		<section id="project" class="project">
 			<h2 class="section-title">Projects</h2>
-			<div class="project-grid">
-				<div class="project-container">
-					<h3>CV App</h3>
+
+			<div class="project-container">
+        <img src="https://picsum.photos/450/300" alt="project">
+
+				<div class="project-content">
+					<h3>Example App</h3>
 					<p>
-						CV creator app built using React. Apart from personal information
-						you can also include education, experience, projects, etc.
+          hello
+          Ipsum facere asperiores officiis nihil distinctio quas Ex optio corrupti reiciendis facere fugiat similique, quaerat. Nulla perferendis doloribus ullam sed
 					</p>
+
 					<ul class="project-skill">
 						<li>HTML</li>
 						<li>CSS</li>
-						<li>JS</li>
+						<li>JavaScript</li>
 						<li>React</li>
 					</ul>
+
 					<ul class="project-link">
 						<li>
 							<a
-								href="https://github.com/rajshekhar26/cv-app"
+								href="https://github.com/rajshekhar26/"
 								aria-label="Source code"
+								title="source code"
 								><i class="icon-border fas fa-code"></i
 							></a>
 						</li>
 						<li>
 							<a
-								href="https://rajshekhar26.github.io/cv-app"
+								href="https://rajshekhar26.github.io/"
 								aria-label="Preview"
 								target="_blank"
+								title="preview"
 								rel="noopener"
 								><i
 									aria-hidden="true"
@@ -103,157 +116,39 @@
 						</li>
 					</ul>
 				</div>
-				<div class="project-container">
-					<h3>Library</h3>
+			</div>
+
+			<div class="project-container">
+        <img src="https://picsum.photos/450/300" alt="project">
+
+				<div class="project-content">
+					<h3>Example App</h3>
 					<p>
-						A simple library app built using plain HTML, CSS and JavaScript.
-						LocalStorage is used to store books.
+          Amet neque in totam exercitationem iusto, dolor est. Rerum quidem cum consequuntur ipsam blanditiis. Expedita accusantium nemo optio provident ab
 					</p>
+
 					<ul class="project-skill">
 						<li>HTML</li>
 						<li>CSS</li>
-						<li>JS</li>
+						<li>JavaScript</li>
+						<li>React</li>
 					</ul>
+
 					<ul class="project-link">
 						<li>
 							<a
-								href="https://github.com/rajshekhar26/Library"
+								href="https://github.com/rajshekhar26/"
 								aria-label="Source code"
-								><i aria-hidden="true" class="icon-border fas fa-code"></i
-							></a>
-						</li>
-						<li>
-							<a
-								href="https://rajshekhar26.github.io/Library"
-								aria-label="Preview"
-								target="_blank"
-								rel="noopener"
-								><i
-									aria-hidden="true"
-									class="icon-border fas fa-external-link-alt"
-								></i
-							></a>
-						</li>
-					</ul>
-				</div>
-				<div class="project-container">
-					<h3>Organic Dining</h3>
-					<p>
-						A restaurant page with navigation tabs. JavaScript is used to
-						generate the entire content of the website.
-					</p>
-					<ul class="project-skill">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JS</li>
-					</ul>
-					<ul class="project-link">
-						<li>
-							<a
-								href="https://github.com/rajshekhar26/restaurant-page"
-								aria-label="Source code"
+								title="source code"
 								><i class="icon-border fas fa-code"></i
 							></a>
 						</li>
 						<li>
 							<a
-								href="https://rajshekhar26.github.io/restaurant-page"
+								href="https://rajshekhar26.github.io/"
 								aria-label="Preview"
 								target="_blank"
-								rel="noopener"
-							>
-								<i
-									aria-hidden="true"
-									class="icon-border fas fa-external-link-alt"
-								></i
-							></a>
-						</li>
-					</ul>
-				</div>
-				<div class="project-container">
-					<h3>Calculator</h3>
-					<p>
-						A calculator app built using plain HTML, CSS and JavaScript with
-						keyboard support.
-					</p>
-					<ul class="project-skill">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JS</li>
-					</ul>
-					<ul class="project-link">
-						<li>
-							<a
-								href="https://github.com/rajshekhar26/calculator"
-								aria-label="Source code"
-								><i class="icon-border fas fa-code"></i
-							></a>
-						</li>
-						<li>
-							<a
-								href="https://rajshekhar26.github.io/calculator"
-								aria-label="Preview"
-								target="_blank"
-								rel="noopener"
-								><i
-									aria-hidden="true"
-									class="icon-border fas fa-external-link-alt"
-								></i
-							></a>
-						</li>
-					</ul>
-				</div>
-				<div class="project-container">
-					<h3>Startpage</h3>
-					<p>A minimal startpage for firefox.</p>
-					<ul class="project-skill">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JS</li>
-					</ul>
-					<ul class="project-link">
-						<li>
-							<a
-								href="https://github.com/rajshekhar26/startpage"
-								aria-label="Source code"
-								><i class="icon-border fas fa-code"></i
-							></a>
-						</li>
-						<li>
-							<a
-								href="https://rajshekhar26.github.io/startpage"
-								aria-label="Preview"
-								target="_blank"
-								rel="noopener"
-								><i
-									aria-hidden="true"
-									class="icon-border fas fa-external-link-alt"
-								></i
-							></a>
-						</li>
-					</ul>
-				</div>
-				<div class="project-container">
-					<h3>Etch A Sketch</h3>
-					<p>A sketchpad.</p>
-					<ul class="project-skill">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JS</li>
-					</ul>
-					<ul class="project-link">
-						<li>
-							<a
-								href="https://github.com/rajshekhar26/etch-a-sketch"
-								aria-label="Source code"
-								><i class="icon-border fas fa-code"></i
-							></a>
-						</li>
-						<li>
-							<a
-								href="https://rajshekhar26.github.io/etch-a-sketch"
-								aria-label="Preview"
-								target="_blank"
+								title="preview"
 								rel="noopener"
 								><i
 									aria-hidden="true"
@@ -268,28 +163,31 @@
 
 		<section id="contact" class="contact">
 			<h2 class="section-title">Get in touch</h2>
+
 			<ul>
 				<li>
 					<a href="mailto:rajshekhar8926@gmail.com">
-						<button class="btn">
+						<span class="btn">
 							<i aria-hidden="true" class="fas icon fa-envelope"></i>Email
-						</button></a
-					>
-				</li>
-				<li>
-					<a href="https://github.com/rajshekhar26" aria-label="Github">
-						<button class="btn">
-							<i aria-hidden="true" class="fab icon fa-github"></i>
-							Github
-						</button>
+						</span>
 					</a>
 				</li>
+
+				<li>
+					<a href="https://github.com/rajshekhar26" aria-label="Github">
+						<span class="btn">
+							<i aria-hidden="true" class="fab icon fa-github"></i>
+							Github
+						</span>
+					</a>
+				</li>
+
 				<li>
 					<a href="https://linkedin.com" aria-label="Linkedin">
-						<button class="btn">
+						<span class="btn">
 							<i aria-hidden="true" class="fab icon fa-linkedin"></i>
 							Linkedin
-						</button>
+						</span>
 					</a>
 				</li>
 			</ul>
@@ -300,18 +198,11 @@
 		</footer>
 
 		<div class="scroll-container">
-			<button class="scroll scroll-down">
-				<a href="#project">
-					<i aria-hidden="true" class="fas fa-mouse"></i>
-					Scroll down
-					<i aria-hidden="true" class="fas fa-chevron-down"></i>
-				</a>
-			</button>
-			<button aria-label="Scroll up" class="scroll scroll-up">
+			<div aria-label="Scroll up" class="scroll-up">
 				<a href="#top">
 					<i aria-hidden="true" class="fas fa-arrow-up"></i>
 				</a>
-			</button>
+			</div>
 		</div>
 	</body>
 </html>

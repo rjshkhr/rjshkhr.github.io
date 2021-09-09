@@ -1,12 +1,3 @@
-const scrollDown = () => {
-	const btnScrollDown = document.querySelector('.scroll-down');
-	if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-		btnScrollDown.style.display = 'none';
-	} else {
-		btnScrollDown.style.display = 'block';
-	}
-};
-
 const scrollUp = () => {
 	const btnScrollUp = document.querySelector('.scroll-up');
 	if (
@@ -19,4 +10,4 @@ const scrollUp = () => {
 	}
 };
 
-export { scrollUp, scrollDown };
+export default { scrollUp };

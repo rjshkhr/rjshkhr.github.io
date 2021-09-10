@@ -21,12 +21,12 @@
 }
 
 .body-dark {
-	--bg: #23283e;
-	--bg-alt: #2a2f4c;
+	--bg: #030217;
+	--bg-alt: #0a0a1b;
 	--fg: #bdbddd;
 	--fg-alt: #cdcdff;
-	--primary: #839efd;
-	--primary-alt: #6b8fff;
+	--primary: #706aec;
+	--primary-alt: #5f58f1;
 	--container-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
 		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
@@ -264,6 +264,18 @@ section {
 	margin-top: 1.2em;
 }
 
+.stack-container {
+	max-width: 32em;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.stack-container i {
+	font-size: 4rem;
+	line-height: 1.5;
+	margin: 0 0.1em;
+}
+
 .contact ul {
 	flex-wrap: wrap;
 	justify-content: center;
@@ -356,6 +368,10 @@ footer small {
 
 	.project .section-title {
 		margin-bottom: 0;
+	}
+
+	.stack-container i {
+		font-size: 3rem;
 	}
 }
 

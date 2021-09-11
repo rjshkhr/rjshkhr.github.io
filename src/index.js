@@ -1,4 +1,6 @@
 import './styles/index.css';
+import './assets/images/cleanfolio.png';
+import './assets/images/startpage.png';
 
 import scroll from './modules/scroll';
 import { toggleTheme, addBodyClass, addBtnClass } from './modules/toggleTheme';

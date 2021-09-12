@@ -17,6 +17,7 @@
 	--fg-alt: #222;
 	--primary: #3370ce;
 	--primary-alt: #185dc7;
+	--primary-light: rgba(44, 93, 206, 0.1);
 	--container-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -25,8 +26,9 @@
 	--bg-alt: #0a0a1b;
 	--fg: #bdbddd;
 	--fg-alt: #cdcdff;
-	--primary: #706aec;
-	--primary-alt: #5f58f1;
+	--primary: #807ae8;
+	--primary-alt: #706aec;
+	--primary-light: rgba(27, 19, 200, 0.1);
 	--container-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
 		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
@@ -259,6 +261,10 @@ section {
 	font-size: 0.8rem;
 	font-weight: 700;
 	margin: 0 0.2em;
+	padding: 0.4em 0.8em;
+	border-radius: 5em;
+	background-color: var(--primary-light);
+	color: var(--primary-alt);
 }
 
 .project-link {

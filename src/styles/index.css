@@ -23,12 +23,12 @@
 
 .body-dark {
 	--bg: #030217;
-	--bg-alt: #0a0a1b;
+	--bg-alt: rgb(22 28 41 / 33%);
 	--fg: #bdbddd;
 	--fg-alt: #cdcdff;
 	--primary: #807ae8;
 	--primary-alt: #706aec;
-	--primary-light: rgba(27, 19, 200, 0.1);
+	--primary-light: rgb(18 17 49 / 44%);
 	--container-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
 		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }

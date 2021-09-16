@@ -11,14 +11,14 @@
    ================ */
 
 .body-light {
-	--bg: #fdfdfd;
+	--bg: #fafafa;
 	--bg-alt: #fff;
 	--fg: #444;
 	--fg-alt: #222;
 	--primary: #3370ce;
 	--primary-alt: #185dc7;
 	--primary-light: rgba(44, 93, 206, 0.1);
-	--container-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	--container-shadow: rgba(100, 100, 181, 0.2) 0px 7px 29px 0px;
 }
 
 .body-dark {
@@ -54,6 +54,18 @@
 ::selection {
 	background: var(--primary);
 	color: var(--bg);
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--bg-alt);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--primary);
 }
 
 html {
@@ -228,7 +240,7 @@ section {
 	padding: 2em;
 	text-align: center;
 	box-shadow: var(--container-shadow);
-	border-radius: 0.5em;
+	border-radius: 1em;
 }
 
 .project img {
@@ -272,15 +284,37 @@ section {
 }
 
 .stack-container {
-	max-width: 32em;
-	width: 95%;
 	margin: 0 auto;
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
-.stack-container i {
-	font-size: 4rem;
-	line-height: 1.5;
-	margin: 0 0.1em;
+.tech-container {
+	width: 10em;
+	height: 10em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--bg-alt);
+	border-radius: 1.5em;
+	border-bottom: 4px solid var(--primary-light);
+	box-shadow: var(--container-shadow);
+	transition: border-bottom 0.3s linear;
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+.tech-container:hover {
+	border-bottom: 4px solid var(--primary);
+}
+
+.tech-container i {
+	font-size: 3rem;
+	margin-bottom: 0.2em;
 }
 
 .contact ul {

@@ -11,14 +11,14 @@
    ================ */
 
 .body-light {
-	--bg: #fafafa;
+	--bg: #f5f6f7;
 	--bg-alt: #fff;
 	--fg: #444;
 	--fg-alt: #222;
 	--primary: #3370ce;
 	--primary-alt: #185dc7;
 	--primary-light: rgba(44, 93, 206, 0.1);
-	--container-shadow: rgba(100, 100, 181, 0.2) 0px 7px 29px 0px;
+  --container-shadow: 0 2px 4px rgb(0 0 0 / 10%);
 }
 
 .body-dark {
@@ -322,7 +322,7 @@ section {
 	left: 0px;
 	transform: scaleX(0);
 	width: 100%;
-	height: 5px;
+	height: 6px;
 	border-radius: 1.5;
 	background-color: var(--primary-alt);
 	transition: all 0.2s linear;

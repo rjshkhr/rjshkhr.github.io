@@ -528,6 +528,7 @@ footer small {
 	position: fixed;
 	font-size: 0.9rem;
 	bottom: 3em;
+  right: 2em;
 	font-weight: 600;
 	transition: transform 0.2s ease-in-out;
 }

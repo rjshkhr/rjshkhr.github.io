@@ -1,5 +1,6 @@
+const btnHamburger = document.querySelector('.fa-bars');
+
 const displayList = () => {
-  const btnHamburger = document.querySelector('.fa-bars');
 	const navUl = document.querySelector('nav ul');
 
 	if (btnHamburger.classList.contains('fa-bars')) {

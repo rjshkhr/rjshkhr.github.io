@@ -42,8 +42,9 @@ var toggleTheme = function toggleTheme() {
 
 
 ;// CONCATENATED MODULE: ./src/modules/displayList.js
+var btnHamburger = document.querySelector('.fa-bars');
+
 var displayList = function displayList() {
-  var btnHamburger = document.querySelector('.fa-bars');
   var navUl = document.querySelector('nav ul');
 
   if (btnHamburger.classList.contains('fa-bars')) {
@@ -63,9 +64,9 @@ var displayList = function displayList() {
 
 
 
-var btnHamburger = document.querySelector('.fa-bars');
+var src_btnHamburger = document.querySelector('.fa-bars');
 var src_btnTheme = document.querySelector('.fa-moon');
-btnHamburger.addEventListener('click', modules_displayList);
+src_btnHamburger.addEventListener('click', modules_displayList);
 src_btnTheme.addEventListener('click', toggleTheme);
 document.addEventListener('scroll', modules_scroll.scrollUp);
 var getBodyClass = localStorage.getItem('class-body-theme');

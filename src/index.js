@@ -13,4 +13,4 @@ document.addEventListener('scroll', scroll.scrollUp);
 const getBodyClass = localStorage.getItem('class-body-theme');
 const getBtnClass = localStorage.getItem('class-btn-theme');
 
-addThemeClass(getBodyClass, getBtnClass)
+addThemeClass(getBodyClass, getBtnClass);

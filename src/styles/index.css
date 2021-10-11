@@ -18,7 +18,7 @@
 	--primary: #306cc4;
 	--primary-alt: #185dc7;
 	--primary-light: rgba(44, 93, 206, 0.1);
-  --container-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+	--container-shadow: 0 2px 4px rgb(0 0 0 / 10%);
 }
 
 .body-dark {
@@ -528,7 +528,7 @@ footer small {
 	position: fixed;
 	font-size: 0.9rem;
 	bottom: 3em;
-  right: 2em;
+	right: 2em;
 	font-weight: 600;
 	transition: transform 0.2s ease-in-out;
 }

@@ -375,7 +375,7 @@ footer small {
 	.project-container {
 		flex-direction: column;
 		max-width: 450px;
-    padding: 1.5em;
+		padding: 1.5em;
 	}
 
 	.project img {

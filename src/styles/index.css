@@ -241,7 +241,7 @@ section {
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--bg-alt);
-	max-width: 1000px;
+	max-width: 950px;
 	width: 95%;
 	margin: 2em auto;
 	padding: 2em;
@@ -277,8 +277,8 @@ section {
 .project-skill li {
 	font-size: 0.8rem;
 	font-weight: 700;
-	margin: 0.2em;
-	padding: 0.4em 0.8em;
+	margin: 0.3em 0.2em;
+	padding: 0.4em 0.6em;
 	border-radius: 5em;
 	background-color: var(--primary-light);
 	color: var(--primary-alt);
@@ -375,6 +375,7 @@ footer small {
 	.project-container {
 		flex-direction: column;
 		max-width: 450px;
+    padding: 1.5em;
 	}
 
 	.project img {

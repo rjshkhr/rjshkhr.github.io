@@ -3,4 +3,4 @@
 ![rajshekhar26 github io-dark](https://user-images.githubusercontent.com/16403754/212466137-312429be-5382-4e6f-9b89-24c0b48e7bf4.png)
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/)

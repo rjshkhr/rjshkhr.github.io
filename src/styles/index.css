@@ -338,6 +338,7 @@ section {
 .contact ul {
 	flex-wrap: wrap;
 	justify-content: center;
+	gap: 0.3em;
 }
 
 .contact .btn {

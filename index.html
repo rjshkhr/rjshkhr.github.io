@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raj Shekhar</title>
+    <style>
+      :root {
+        --bg: #1d2326;
+        --fg: #e6e7e6;
+        --fg-alt: #ced3dc;
+        --primary: #7e9aab;
+        --secondary: #839c98;
+        --container: #242b2d;
+        --spacing-xs: 0.25rem;
+        --spacing-sm: 0.5rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 2rem;
+        --transition: 0.2s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--fg);
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: var(--spacing-lg);
+      }
+
+      section {
+        margin: 4rem 0;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .hero-content h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        margin-bottom: var(--spacing-xs);
+      }
+
+      .role {
+        color: var(--fg-alt);
+        font-size: 1.25rem;
+      }
+
+      .social-links {
+        display: flex;
+        gap: var(--spacing-lg);
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--spacing-lg);
+      }
+
+      .project {
+        background-color: var(--container);
+        padding: var(--spacing-lg);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-md);
+        transition: var(--transition);
+      }
+
+      .project:hover {
+        transform: translateY(-2px);
+      }
+
+      .project h3 {
+        font-size: 1.25rem;
+      }
+
+      .project p {
+        flex-grow: 1;
+        color: var(--fg-alt);
+        margin-bottom: var(--spacing-md);
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none;
+        transition: var(--transition);
+      }
+
+      a:hover {
+        color: var(--secondary);
+      }
+
+      .project a {
+        padding-right: 1.5rem;
+        position: relative;
+      }
+
+      .project a::after {
+        content: "→";
+        position: absolute;
+        right: 0;
+        transition: var(--transition);
+      }
+
+      .project a:hover::after {
+        transform: translateX(4px);
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1.5rem;
+        }
+
+        .hero {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: var(--spacing-lg);
+        }
+
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .social-links {
+          gap: var(--spacing-md);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Raj Shekhar</h1>
+          <div class="role">Software Developer</div>
+        </div>
+        <div class="social-links">
+          <a href="mailto:rjshekhar.official@gmail.com">Email</a>
+          <a href="https://github.com/rjshkhr">GitHub</a>
+          <a href="https://twitter.com/rjshkhr">Twitter</a>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="projects-grid">
+          <div class="project">
+            <h3>dotfiles</h3>
+            <p>~/</p>
+            <a href="https://github.com/rjshkhr/dotfiles">View Project</a>
+          </div>
+
+          <div class="project">
+            <h3>cleanfolio</h3>
+            <p>A portfolio template for developers.</p>
+            <a href="https://github.com/rjshkhr/cleanfolio">View Project</a>
+          </div>
+
+          <div class="project">
+            <h3>muvee</h3>
+            <p>A movie tracking app.</p>
+            <a href="https://github.com/rjshkhr/muvee">View Project</a>
+          </div>
+
+          <div class="project">
+            <h3>shadow-nvim</h3>
+            <p>A dark, muted colorscheme.</p>
+            <a href="https://github.com/rjshkhr/shadow-nvim">View Project</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
